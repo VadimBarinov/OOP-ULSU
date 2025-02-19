@@ -26,7 +26,5 @@ namespace Lab_3
             return base.ToString() + string.Format("Цвет: {0}; ", this.color);
         }
 
-        public override string? GetColor() {  return color; }
-
     }
 }

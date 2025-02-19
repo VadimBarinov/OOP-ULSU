@@ -25,7 +25,5 @@ namespace Lab_3
         {
             return base.ToString() + string.Format("Длина стебля: {0}; ", this.stemLength);
         }
-
-        public override double? GetSemLength() { return stemLength; }
     }
 }

@@ -28,7 +28,5 @@ namespace Lab_3
             return string.Format("Имя: {0}; Вид: {1}; ", this.name, this.type);
         }
 
-        public override string? GetName() {  return this.name; }
-
     }
 }

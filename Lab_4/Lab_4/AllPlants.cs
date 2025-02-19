@@ -15,10 +15,6 @@ namespace Lab_3
 
         public abstract string ToString();
 
-        public virtual string? GetColor(){ return null; }
-        public virtual double? GetSemLength(){ return null; }
-        public virtual string? GetName(){ return null; }
-
         public static List<AllPlants> list = new List<AllPlants>();
 
         public static void AddToList(AllPlants plant)
@@ -41,9 +37,13 @@ namespace Lab_3
 
             foreach (AllPlants plant in list)
             {
-                if (plant is Rose && plant.GetColor() == color)
+                if (plant is Rose)
                 {
-                    count++;
+                    Rose? rose = plant as Rose;
+                    if(rose?.color == color)
+                    {
+                        count++;
+                    }
                 }
             }
             yield return count;
@@ -54,9 +54,13 @@ namespace Lab_3
         {   
             foreach (AllPlants plant in list)
             {
-                if (plant is Rose && plant.GetSemLength() > stemLength && plant.GetName() == "Чайная роза")
+                if (plant is Rose)
                 {
-                    yield return " - " + plant.ToString();   
+                    Rose? rose = plant as Rose;
+                    if (rose?.stemLength > stemLength && rose?.name == "Чайная роза")
+                    {
+                        yield return " - " + rose.ToString();   
+                    }
                 }
             }
         }
