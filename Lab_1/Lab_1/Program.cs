@@ -23,10 +23,10 @@ namespace Lab_1
 
             // Индивидуальное задание
             Int number1 = new Int();
-            number1.SetValue(33);
+            number1.SetValue(133);
             number1.Print();
             Int number2 = new Int();
-            number2.SetValue(42);
+            number2.SetValue(-42);
             number2.Print();
             Int number3 = new Int();
             number3.SumValues(number1, number2);

@@ -36,10 +36,10 @@ namespace Lab_3
 
             // вызываем фукнции 
             Console.WriteLine("\nВсе чайные розы с длиной стебля большей, чем задал пользователь: ");
-            Console.WriteLine(string.Join("\n", AllPlants.GetTeaRoseStemLength(14.0)));
+            Console.WriteLine(string.Join("\n", AllPlants.GetTeaRoseStemLength(22.0)));
 
             Console.WriteLine("\nКоличество роз заданного цвета: ");
-            Console.WriteLine(string.Join("\n", AllPlants.GetColorRoseCount("Красная")));
+            Console.WriteLine(string.Join("\n", AllPlants.GetColorRoseCount("Зеленый")));
 
             Console.ReadKey();
         }

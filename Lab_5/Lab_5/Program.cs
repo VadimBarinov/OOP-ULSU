@@ -10,9 +10,9 @@ namespace Lab_5
             Console.WriteLine();
             
             // создание 3 массивов
-            Array1<int> array1 = new Array1<int>(6, new int[]{ 1, 2, 3, 33, 4, 12});
+            Array1<int> array1 = new Array1<int>(6, new int[]{ -1, 20, 11, 9, 4, 12});
             Array1<int> array2 = new Array1<int>(4, new int[]{ 44, 52, 11, 9});
-            Array1<int> array3 = new Array1<int>(4, new int[]{ 44, 52, 11, 9});
+            Array1<int> array3 = new Array1<int>(4, new int[]{ 44, 52, 11, 90});
 
             Console.WriteLine("Массив 1: " + string.Join(", ", array1.elements));
             Console.WriteLine("Массив 2: " + string.Join(", ", array2.elements));
